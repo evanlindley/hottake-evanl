@@ -23,7 +23,7 @@
  * Change "nord" to whatever theme you set on <html>.
  */
 [data-theme='nord'] {
-  --color-primary: #253324;
+  --color-primary: #543B25;
   --color-accent: #FBBE49;
   --color-teal: #008276;
   --color-brown: #543B25;
@@ -31,6 +31,20 @@
   --color-darkgreen: #253324;
   --color-gold: #FBBE49;
 
+}
+
+.hero {
+  background-image: url("https://wallpapercave.com/wp/wp2506092.jpg");
+}
+
+.hero h1{
+  text-shadow: 2px 2px 15px black;
+  font-size: 60px;
+  color: var(--color-gold);
+}
+
+.hero button:hover {
+  
 }
 
 /* TYPE
