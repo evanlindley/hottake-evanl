@@ -6,21 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Hot Take</title>
 
-  <!--
-      THE THREE TAGS. Tailwind and daisyUI, no build step, nothing installed.
-      Open this file with Live Server and start working.
-
-      Two honest notes:
-        1. The last tag is Tailwind's BROWSER build. Tailwind's own docs say it
-           is "designed for development purposes only, and is not intended for
-           production." That is fine for now. Unit 8 replaces it with a real
-           built stylesheet, because publishing to a public address is where
-           "development only" stops being acceptable.
-        2. These load from jsdelivr, which means jsdelivr sees a request from
-           every reader of your site. That is your call to make on your own
-           project. Read Unit 8's "what a page costs its reader" before you
-           decide it does not matter.
-    -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -43,50 +28,54 @@
     </div>
   </div>
 
-  <div class="container">
-    <div class="row columns-3">
-      <div class="card bg-base-100 w-96 shadow-sm">
-  <figure>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes" />
-  </figure>
-  <div class="card-body">
-    <h2 class="card-title">Card Title</h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div>
-<div class="card bg-base-100 w-96 shadow-sm">
-  <figure>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes" />
-  </figure>
-  <div class="card-body">
-    <h2 class="card-title">Card Title</h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div>
-<div class="card bg-base-100 w-96 shadow-sm">
-  <figure>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes" />
-  </figure>
-  <div class="card-body">
-    <h2 class="card-title">Card Title</h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div>
+  <!-- Feature Breakout -->
+  <div class="max-w-6xl mx-auto my-10">
+    <div class="grid gap-6 grid-cols-1 md:grid-cols-3">
+
+      <!-- CARD 1 -->
+      <div class="card bg-base-100 shadow-sm">
+        <figure class="px-10 pt-10">
+          <img src="https://cdn.wikimg.net/en/zeldawiki/images/3/3e/BotW_Eastern_Great_Plateau.png" alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Limitless Exploration</h2>
+          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          <div class="card-actions">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card bg-base-100 shadow-sm">
+        <figure class="px-10 pt-10">
+          <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/04/Zelda_BOTW_Link_Zelda.jpg" alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Touching Plot</h2>
+          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          <div class="card-actions">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card bg-base-100 shadow-sm">
+        <figure class="px-10 pt-10">
+          <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Flawless Mechanics</h2>
+          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          <div class="card-actions">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>"
 
