@@ -23,14 +23,27 @@
  * Change "nord" to whatever theme you set on <html>.
  */
 [data-theme='nord'] {
-  --color-primary: #543B25;
-  --color-accent: #FBBE49;
+  --color-primary: #FBBE49;
+  --color-accent: #23d38A;
   --color-teal: #008276;
   --color-brown: #543B25;
   --color-green: #23D38A;
   --color-darkgreen: #253324;
   --color-gold: #FBBE49;
+  --color-lightgold: #FFD280;
+  --color-offblack: rgb(45, 28, 28);
 
+}
+
+
+body {
+  background-image: url("https://wallpaperaccess.com/full/4689582.jpg");
+  object-fit: cover;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.295);
+  color: grey;
 }
 
 .hero {
@@ -43,8 +56,15 @@
   color: var(--color-gold);
 }
 
-.hero button:hover {
-  
+.btn:hover {
+  color: var(--color-gold);
+  /*background-color: var(--color-brown);*/
+  /*border-color: var(--color-brown);*/
+  background-image: url("https://wallpaperaccess.com/full/4689582.jpg");
+}
+
+.card {
+  background-color: #FFD280;
 }
 
 /* TYPE
